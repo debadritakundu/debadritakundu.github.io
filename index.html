@@ -9,53 +9,103 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0d0d0d;
+    background: #0b0b0b;
     color: white;
 }
 
+/* Layout */
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
-h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+/* Top Section */
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-p {
+.name {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.tagline {
     color: #aaa;
+    max-width: 600px;
+    line-height: 1.6;
 }
 
-.projects {
-    margin-top: 40px;
+/* Contact Bar */
+.contact {
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #ccc;
 }
 
-.project {
-    margin-bottom: 25px;
-    padding: 20px;
+/* Sections */
+.section {
+    margin-top: 50px;
+}
+
+/* Skills */
+.skills {
+    display: grid;
+    gap: 15px;
+}
+
+.skill {
+    padding: 15px;
     border: 1px solid #222;
+    border-radius: 8px;
+    background: #111;
+}
+
+/* Experience */
+.experience {
+    background: #111;
+    padding: 25px;
     border-radius: 10px;
-    transition: 0.3s;
+    border: 1px solid #222;
 }
 
-.project:hover {
-    border-color: #555;
+.job {
+    margin-bottom: 25px;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+.job h3 {
+    margin: 0;
 }
 
-button {
+.job p {
+    color: #aaa;
+    margin: 5px 0;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 10px 16px;
     background: white;
     color: black;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .name {
+        font-size: 30px;
+    }
 }
 </style>
 
@@ -64,37 +114,61 @@ button {
 
 <div class="container">
 
-<h1>Debadrita Kundu</h1>
-<p>Frontend developer / designer creating modern web experiences.</p>
+<!-- HEADER -->
+<div class="header">
+<div class="name">Debadrita Kundu</div>
 
-<div class="projects">
-
-<h2>Projects</h2>
-
-<div class="project">
-<h3>Arin Dev Studio (Concept)</h3>
-<p>Premium conceptual design studio website.</p>
-<a href="https://debadritakundu.github.io/arin-dev-studio" target="_blank">
-<button>View Project</button>
-</a>
+<div class="tagline">
+Freelance digital designer, UI/UX designer, and web developer with hands-on experience in creating websites, brand visuals, and user-focused design solutions. I combine creativity and technical skills to build polished digital experiences.
 </div>
 
-<div class="project">
-<h3>Craft Civil</h3>
-<p>Live business website.</p>
-<a href="https://craftcivil.co.nz" target="_blank">
-<button>View Website</button>
-</a>
+<div class="contact">
+<span>guqlub@gmail.com</span>
+<span>+91 8240697839</span>
+<span>Kolkata, India</span>
+</div>
 </div>
 
-<div class="project">
+<!-- SKILLS -->
+<div class="section">
+<h2>Skills</h2>
+
+<div class="skills">
+<div class="skill">Full-Stack Web Development</div>
+<div class="skill">UI/UX Design & User Experience</div>
+<div class="skill">Branding, Logo & Identity Design</div>
+<div class="skill">Custom Web Design</div>
+</div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section">
+<h2>Experience</h2>
+
+<div class="experience">
+
+<div class="job">
 <h3>Brush N Beyond</h3>
-<p>Live service website.</p>
-<a href="https://brushnbeyond.co.nz" target="_blank">
-<button>View Website</button>
-</a>
+<p>Christchurch, New Zealand</p>
+<p>Designed and developed a full service-based website with UI/UX and branding.</p>
+<a class="button" href="https://brushnbeyond.co.nz" target="_blank">View Website</a>
 </div>
 
+<div class="job">
+<h3>Craft Civil</h3>
+<p>Auckland, New Zealand</p>
+<p>Created a professional business website with responsive layout and service-focused structure.</p>
+<a class="button" href="https://craftcivil.co.nz" target="_blank">View Website</a>
+</div>
+
+<div class="job">
+<h3>Arin Dev Studio (Concept)</h3>
+<p>Concept Project</p>
+<p>Premium conceptual design studio website.</p>
+<a class="button" href="https://debadritakundu.github.io/arin-dev-studio" target="_blank">View Project</a>
+</div>
+
+</div>
 </div>
 
 </div>
